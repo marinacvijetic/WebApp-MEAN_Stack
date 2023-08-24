@@ -1,0 +1,93 @@
+.admin {
+    
+    &-wrapper {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    &-main {
+        width: calc(100%-175px);
+        margin-left: 175px;
+    }
+
+    &-sidebar {
+        position: fixed;
+        width: 175px;
+        // background-color: chocolate;
+        height: 100%;
+        background: #f46b45; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #f46b45, #eea849); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #f46b45, #eea849); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+        .logo {
+            padding: 4px;
+            width: 100%;
+            border-bottom: 1px white;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .links {
+            ul {
+                margin: 0;
+                padding: 0;
+
+                li {
+                    display: block;
+                    list-style: none;
+                    width: 100%;
+
+                    a {
+                        color: var(--surface-a);
+                        padding: 10px 15px;
+                        display: block;
+                        width: 100%;
+                        text-shadow: black;
+                        font-weight: bold;
+
+                        &:hover {
+                            background-color: var(--orange-400);
+                        }
+
+                        &.active {
+                            color: black;
+                        }
+
+                        i {
+                            margin-right: 8px;
+                            margin-top: -2px;
+                            float: left;
+                        }
+
+                        &.logout {
+                                color: var(--orange-900);
+                                cursor: pointer;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.admin-page {
+    padding: 10px;
+    &-header {
+      
+      .actions {
+        text-align: right;
+      }
+    }
+  
+    .p-fieldset {
+      margin-bottom: 15px;
+    }
+
+    
+  }
